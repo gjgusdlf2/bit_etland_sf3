@@ -12,7 +12,7 @@
 }
 </style>
     <div class="grid-item" id="left" style="border: 1px solid black;height:400px">
-    	<h1 style="margin-bottom: 100px;">고객 전용</h1>
+    	<h1 style="margin-bottom: 100px;">고객 전용 ${time}</h1>
     	<a href="#" id="cust_join" >회원가입</a><br />
     	<a href="#" id="cust_login" >로 그 인</a>
     </div>
