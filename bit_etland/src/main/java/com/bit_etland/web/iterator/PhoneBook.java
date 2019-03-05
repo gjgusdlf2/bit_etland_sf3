@@ -8,9 +8,7 @@ import java.util.Set;
 
 import com.bit_etland.web.domain.CustomerDTO;
 
-import lombok.Data;
 
-@Data
 public class PhoneBook {
 	public static void main(String[] args) {
 		HashMap<String,Object> map = null;
@@ -22,8 +20,7 @@ public class PhoneBook {
 			@SuppressWarnings("unused")
 			String id = (String) ent.getKey();
 			CustomerDTO cust = (CustomerDTO) ent.getValue();
-			System.out.print(
-					cust.getCustomerName()+" : "+cust.getPhone()+"\n");
+		//	System.out.print(cust.getCustomerName()+" : "+cust.getPhone()+"\n");
 		}
 		
 	}
