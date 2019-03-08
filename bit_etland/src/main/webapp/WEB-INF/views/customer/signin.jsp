@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<jsp:include page="../home/top.jsp"/>
-<link rel="stylesheet" href="${css}/employee/register.css" />
+<%-- <link rel="stylesheet" href="${css}/employee/register.css" /> --%>
 <div class="grid-item" id= "side_bar">
 <h1>로그인</h1>
 </div>
@@ -11,7 +10,7 @@
 	<label class="control-label col-sm-2" >아이디 :</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" 
-      		 id="customer_id" name="customer_id" value="hoho" >
+      		 id="customerID" name="customerID" value="hoho" >
     </div>
 </div>
 <div id="register-container" class="form-group">    
@@ -35,11 +34,11 @@
 
 </form>
 </div>
-<jsp:include page="../home/bottom.jsp"></jsp:include>
 <script>
 $('#confirm_btn').click(function(){
 	$('#form')
-	.attr('action', '${ctx}/customer.do')
+	.attr('method','POST')
+	.attr('action', '${ctx}/customer/signin')
 	.submit();
 	
 	/*if(empno === ''){

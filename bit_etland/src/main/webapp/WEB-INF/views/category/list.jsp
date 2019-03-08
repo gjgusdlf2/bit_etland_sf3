@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>        
-<jsp:include page="../home/top.jsp"/>
 <style>
 #side_menu{
     grid-column-start: 1;
@@ -104,7 +103,6 @@
 	  </div>
 	</div> --%>
 </div>
-<jsp:include page="../home/bottom.jsp"/>
 
 <script src="${js}/employee.js">
 /*

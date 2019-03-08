@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<jsp:include page="../home/top.jsp"/>
 <style>
 #ul_nav {
     grid-column-start: 1;
@@ -114,7 +113,6 @@
         </div>
       </div>
     </div>
-<jsp:include page="../home/bottom.jsp"/>  
 <script>
 $('#li_nav_7 a').click(function(){
 	location.assign("${ctx}/customer.do?cmd=cust_retrieve&page=detail&customer_id=${customer.customerID}");

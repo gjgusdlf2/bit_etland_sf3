@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<jsp:include page="../home/top.jsp"/>
 <div class="grid-item" id= "side_bar">
 <h1>회원가입</h1>
 </div>
@@ -74,7 +73,6 @@
 
 </form>
 </div>
-<jsp:include page="../home/bottom.jsp"></jsp:include>
 <script>
 $('#confirm_btn').click(function(){
 	$('#form')
