@@ -11,7 +11,7 @@ import com.bit_etland.web.domain.CustomerDTO;
 
 @Controller
 @RequestMapping("/customer")
-public class MemberController {
+public class CustomerController {
 	static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	@RequestMapping(value="/signin",method=RequestMethod.POST)
 	public String signin(@ModelAttribute CustomerDTO customer) {
