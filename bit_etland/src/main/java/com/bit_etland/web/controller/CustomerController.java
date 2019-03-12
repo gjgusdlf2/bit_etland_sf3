@@ -15,8 +15,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.bit_etland.web.domain.CustomerDTO;
 import com.bit_etland.web.service.CustomerService;
 
-import jdk.nashorn.internal.ir.RuntimeNode.Request;
-
 @SessionAttributes("user")
 @Controller
 @RequestMapping("/customer")
@@ -56,7 +54,7 @@ public class CustomerController {
 			System.out.println("조회 파라미터"+customerID);
 			customer.setCustomerID(customerID);
 			customer = customerService.retrieveCustomer(customer);
-			red.addAttribute("customer",param.getCustomerID());
+			//red.addAttribute("customer", param.getCustomerID());
 			return "redirect:customer/detail.tiles";
 		}
 }
