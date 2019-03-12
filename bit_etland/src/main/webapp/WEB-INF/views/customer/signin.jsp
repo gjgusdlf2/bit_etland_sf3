@@ -10,14 +10,14 @@
 	<label class="control-label col-sm-2" >아이디 :</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" 
-      		 id="customerID" name="customerID" value="hoho" >
+      		 id="customerID" name="customerID" " >
     </div>
 </div>
 <div id="register-container" class="form-group">    
     <label class="control-label col-sm-2" >비밀번호 :</label>
     <div class="col-sm-10">
       <input type="password" class="form-control" 
-      		 id="password" name="password" value="1234" >
+      		 id="password" name="password" " >
     </div>
 </div>
   

@@ -16,7 +16,7 @@ $('#emp_access').click(function(){
 	location.assign('employee.do?cmd=move&page=access');
 });
 $('#cust_join').click(function(){
-	location.assign('customer.do?cmd=move&page=signup');
+	location.assign('${ctx}/move/customer/signup');
 });
 $('#cust_login').click(function(){
 	location.assign('${ctx}/move/customer/signin');
