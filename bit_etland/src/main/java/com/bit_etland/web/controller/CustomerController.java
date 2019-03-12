@@ -47,14 +47,15 @@ public class CustomerController {
 			return "public:customer/detail.tiles";
 		}
 	@RequestMapping(value="/update",method=RequestMethod.POST)
-	public String update(@RequestParam("customerID")String customerID,
+	public String update(@ModelAttribute CustomerDTO param,
 			Model session,
 			RedirectAttributes red) {		
 			logger.info("\n --------- CustomerController {} !! ----------","detail");
-			System.out.println("조회 파라미터"+customerID);
-			customer.setCustomerID(customerID);
+			System.out.println("조회 파라미터"+param.toString());
+			customerService.modifyCustomer(param);
 			customer = customerService.retrieveCustomer(customer);
-			//red.addAttribute("customer", param.getCustomerID());
+			session.addAttribute("user", customer);
+			red.addAttribute("customerID", param.getCustomerID());
 			return "redirect:customer/detail.tiles";
 		}
 }

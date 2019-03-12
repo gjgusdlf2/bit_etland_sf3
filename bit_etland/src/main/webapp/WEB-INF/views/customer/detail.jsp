@@ -58,21 +58,21 @@ text-align: center;
 <div class="grid-item" id= "content" style="border: 1px solid black">
 	<div class="mypage">
 	<div class="mypage1">아이디</div>
-	<div class="mypage2">${cust.customerID}</div>
+	<div class="mypage2">${user.customerID}</div>
 	<div class="mypage1">이름</div>
-	<div class="mypage2">${cust.customerName}</div>
+	<div class="mypage2">${user.customerName}</div>
 	<div class="mypage1">생년월일</div>
-	<div class="mypage2">${cust.ssn}</div>
+	<div class="mypage2">${user.ssn}</div>
 	<div class="mypage1">성별</div>
 	<div class="mypage2">남</div>
 	<div class="mypage1">전화번호</div>
-	<div class="mypage2">${cust.phone}</div>
+	<div class="mypage2">${user.phone}</div>
 	<div class="mypage1">주소</div>
-	<div class="mypage2">${cust.city}</div>
+	<div class="mypage2">${user.city}</div>
 	<div class="mypage1">상세주소</div>
-	<div class="mypage2">${cust.address}</div>
+	<div class="mypage2">${user.address}</div>
 	<div class="mypage1">우편번호</div>
-	<div class="mypage2">${cust.postalCode}</div>
+	<div class="mypage2">${user.postalCode}</div>
 </div>
 </div>
 <div class="grid-item update_cus" >
@@ -85,9 +85,9 @@ text-align: center;
 </div>
 
 <script>
-$('#update_btn').click(function(){
+$('#confirm_btn').click(function(){
 	location.assign('${ctx}/customer.do?'
-+'cmd=cust_retrieve&page=update&customer_id=${cust.customerID}');
++'cmd=cust_retrieve&page=update&customer_id=${user.customerID}');
 });
 $('#delete_btn').click(function(){
 	location.assign('${ctx}/customer.do?'

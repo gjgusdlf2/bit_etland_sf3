@@ -62,27 +62,23 @@ text-align: center;
     <form id="form">
     <div class="mypage">
     <div class="mypage1">아이디</div>
-    <div class="mypage2">${cust.customerID}</div>
+    <div class="mypage2">${user.customerID}</div>
     <div class="mypage1">이름</div>
-    <div class="mypage2">${cust.customerName}</div>
+    <div class="mypage2">${user.customerName}</div>
     <div class="mypage1">생년월일</div>
-    <div class="mypage2">${cust.ssn}</div>
+    <div class="mypage2">${user.ssn}</div>
     <div class="mypage1">성별</div>
     <div class="mypage2">남</div>
     <div class="mypage1">전화번호</div>
-    <div class="mypage2"><input type="text" id="phone" name="phone" placeholder="${cust.phone}" /></div>
+    <div class="mypage2"><input type="text" id="phone" name="phone" value="${user.phone}" /></div>
     <div class="mypage1">주소</div>
-    <div class="mypage2"><input type="text" id="city" name="city" placeholder="${cust.city}" /></div>
+    <div class="mypage2"><input type="text" id="city" name="city" value="${user.city}" /></div>
     <div class="mypage1">상세주소</div>
-    <div class="mypage2"><input type="text" id="address" name="address" placeholder="${cust.address}"/></div>
+    <div class="mypage2"><input type="text" id="address" name="address" value="${user.address}"/></div>
     <div class="mypage1">우편번호</div>
-    <div class="mypage2"><input type="text" id="postal_code" name="postal_code" placeholder="${cust.postalCode}"/></div>
+    <div class="mypage2"><input type="text" id="postal_code" name="postal_code" value="${user.postalCode}"/></div>
     <div class="mypage1">임시비밀번호</div>
-    <div class="mypage2"><input type="text" id="password" name="password" placeholder="임시비밀번호" /></div>
-    <input type="hidden" name="customer_id" value="${cust.customerID}" />
-    <input type="hidden" name="cmd"  value="cust_update"/><br />
-    <input type="hidden" name="page" value="detail"/>
-    
+    <div class="mypage2"><input type="text" id="password" name="password" value="임시비밀번호" /></div>
 </div>
 </form>
 	

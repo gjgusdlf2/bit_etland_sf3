@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.bit_etland.web.proxy.ContextProxy;
-@SessionAttributes({"ctx","css","js","img","time"})
+
 @Controller
 public class HomeController {
 	static final Logger logger = LoggerFactory.getLogger(HomeController.class);

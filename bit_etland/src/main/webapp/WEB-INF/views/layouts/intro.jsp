@@ -47,7 +47,7 @@
   	<tiles:insertAttribute name="menu"/>
   </div>
   <div class="item3">
-  	<tiles:insertAttribute name="main"/>
+  	<tiles:insertAttribute name="content"/>
   </div>  
   <div class="item4">
   	<tiles:insertAttribute name="right"/>
