@@ -1,6 +1,5 @@
 "use strict";
 function Session(x){
-	alert('-------4----------'+x);
 	sessionStorage.setItem('ctx',x);
 	sessionStorage.setItem('js',x+'/resources/js');
 	sessionStorage.setItem('img',x+'/resources/img');

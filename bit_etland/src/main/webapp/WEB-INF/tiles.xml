@@ -19,10 +19,4 @@
   <definition name="*.jsp" extends="no_tiles">
   	<put-attribute name="no_template" value="/WEB-INF/views/{1}.jsp"/>
   </definition>
-    <definition name="algorithm" template="/WEB-INF/views/algorithm.jsp">
-    <put-attribute name="algorithm" value="" />
-  </definition>
-  <definition name="*.jsp" extends="algorithm">
-  	<put-attribute name="algorithm" value="/WEB-INF/views/{1}.jsp"/>
-  </definition>
 </tiles-definitions>
