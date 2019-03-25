@@ -67,10 +67,11 @@
     <div id="right_content" class="col-sm-9">
       <h4><small>RECENT POSTS</small></h4>
       <hr>
-      <h2 id="question">I Love Food</h2>
+      <h2>I Love Food</h2>
       <h5><span  class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
-      <h5><span id="answer_btn1" class="label label-danger">Food</span> <span id="answer_btn2" class="label label-primary">Ipsum</span></h5><br>
-      <p id="result">Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h5><span class="label label-danger">Food</span>
+      <span class="label label-primary">Ipsum</span></h5><br>
+      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <br><br> 
       <h4 id="rm_start"><small>RECENT POSTS</small></h4>
       <hr>
@@ -127,7 +128,8 @@
 <footer class="container-fluid">
   <p>Footer Text</p>
 </footer>
-<script src="${js}/algo.js"></script>
+<script src="${js}/algorithm/algo.js"></script>
+<script src="${js}/algorithm/sequence.js"></script>
 <script>
 algo.init('${ctx}')
 </script>
